@@ -1,4 +1,17 @@
 /* Custom Script */
+/* Add class to navbar */
+$(document).ready(function() {
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 0) {
+            $('.navbar').addClass("bg-dark");
+        } else {
+            $('.navbar').removeClass("bg-dark");
+        }
+    });
+});
+$(".navbar-toggler").click(function() {
+    $('.navbar').addClass("bg-dark");
+});
 /* Owl Carousel V2 */
 $('.owl-carousel-v2').owlCarousel({
     loop: true,
